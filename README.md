@@ -1,5 +1,10 @@
 # Master-Slave Replication: MySQL-5.7
-This document expains the step-by-step process to create, pause, resume, disable and database restore in Master-Slave Replication for MySQL 5.7.
+This document expains the step-by-step process to  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a.  [Create Master-Slave Replication](#database-restoration)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.  [Pause Replication](#temporarily-pausedisable-the-replication)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.  [Resume Replication](#temporarily-pausedisable-the-replication)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.  [Disable Replication](#permanently-disable-the-replication)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.  [Restore Database](#database-restoration)  
 
 ## Create Master-Slave Replication:
 ### Step 1: Master Database Configuration:
@@ -41,7 +46,7 @@ This document expains the step-by-step process to create, pause, resume, disable
 ```mysql
   USE <database_name>;
   FLUSH TABLES WITH READ LOCK;
-  SHOW MASTER STATUS;
+  SHOW MASTER STATUS
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Note down the values for status response.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * If required, then take the backup of Master database for creating Slave using below command:
