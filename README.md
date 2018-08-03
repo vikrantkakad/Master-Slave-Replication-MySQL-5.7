@@ -1,10 +1,12 @@
 # Master-Slave Replication: MySQL-5.7
 This document expains the step-by-step process to  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a.  [Create Master-Slave Replication](#database-restoration)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a.  [Create Master-Slave Replication](#create-master-slave-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.  [Pause Replication](#temporarily-pausedisable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.  [Resume Replication](#temporarily-pausedisable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.  [Disable Replication](#permanently-disable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.  [Restore Database](#database-restoration)  
+
+---
 
 ## Create Master-Slave Replication:
 ### Step 1: Master Database Configuration:
@@ -122,6 +124,8 @@ This document expains the step-by-step process to
         EXIT;
 ```
 
+---
+
 ## Temporarily Pause/Disable the Replication
 ### Steps to Temporarily Pause/Disable the Replication on Slave Server:
 1. #### Connect to Slave MySql Database:
@@ -141,6 +145,8 @@ This document expains the step-by-step process to
   START SLAVE SQL_THREAD;
   EXIT;
 ```
+
+---
 
 ## Permanently Disable the Replication:
 ### Steps to Permanently/Completely Disable the MySQL replication on Slave Server:
@@ -168,6 +174,7 @@ This document expains the step-by-step process to
   sudo service mysql restart
 ```
 
+---
 
 ## Database Restoration:
 ### Steps to Restore the Master Databases from Slave Server in Replication:
@@ -270,3 +277,6 @@ This document expains the step-by-step process to
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Slave Status now should be similar to Master Server. Also test if Master-Slave Replication is working or not by doing some changes at any test table in Master Database; which should be reflected in Slave Database.
+
+---
+
