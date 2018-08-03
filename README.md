@@ -1,4 +1,3 @@
-# Master-Slave Replication: MySQL-5.7 
 <img align="right" width="300" src="./img/logo.png">
 
 This document expains the step-by-step process to  
@@ -7,10 +6,10 @@ This document expains the step-by-step process to
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.  [Resume Replication](#temporarily-pausedisable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.  [Disable Replication](#permanently-disable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.  [Restore Database](#database-restoration)  
-
-
+  
+  
 ![alt text](./img/mysql-replication.png)
-
+  
 
 ---
 
@@ -288,5 +287,6 @@ This document expains the step-by-step process to
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  * Slave Status now should be similar to Master Server. Also test if Master-Slave Replication is working or not by doing some changes at any test table in Master Database; which should be reflected in Slave Database.
 
----
+---  
 
+Copyright &copy; [Vikrant Kakad](https://VikrantKakad.github.io) 2018
