@@ -1,10 +1,16 @@
-# Master-Slave Replication: MySQL-5.7
+# Master-Slave Replication: MySQL-5.7 
+<img align="right" width="300" src="./img/logo.png">
+
 This document expains the step-by-step process to  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a.  [Create Master-Slave Replication](#create-master-slave-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.  [Pause Replication](#temporarily-pausedisable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.  [Resume Replication](#temporarily-pausedisable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.  [Disable Replication](#permanently-disable-the-replication)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.  [Restore Database](#database-restoration)  
+
+
+![alt text](./img/mysql-replication.png)
+
 
 ---
 
@@ -61,6 +67,10 @@ This document expains the step-by-step process to
   UNLOCK TABLES;
   QUIT;
 ```
+
+  
+![alt text](./img/mysql-master-slave-replication.jpg)  
+  
 
 
 ### Step 2: Slave Database Configuration:
