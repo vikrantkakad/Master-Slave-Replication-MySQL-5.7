@@ -1,3 +1,9 @@
+# Master-Slave-Replication-MySQL-5.7
+
+[![License](https://img.shields.io/github/license/vikrantkakad/Master-Slave-Replication-MySQL-5.7?color=009fff)](LICENSE)
+
+
+
 <img align="right" width="300" src="./img/logo.png">
 
 This document expains the step-by-step process to  
